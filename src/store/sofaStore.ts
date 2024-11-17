@@ -13,13 +13,13 @@ interface Sofa {
 }
 
 export const useSofaStore = create<Sofa>( (set) => ({
-  material: 'fabric',
+  material: 'leather',
   setMaterial: (material: string ) => {
     set({ material })
   },
   color: {
-    color: '#683434',
-    name: 'brown'
+    color: "#896599",
+    name: "mauve",
   },
   setColor: (color: SofaColor ) => {
     set({ color })
