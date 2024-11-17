@@ -1,4 +1,4 @@
-export const chairColors = [
+export const sofaColors = [
   {
     color: "#683434",
     name: "brown",

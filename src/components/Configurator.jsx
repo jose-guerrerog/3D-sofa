@@ -1,4 +1,4 @@
-import { chairColors } from "../constants";
+import { sofaColors } from "../constants";
 import { useSofaStore } from "../store/sofaStore";
 
 const Configurator = () => {
@@ -11,7 +11,7 @@ const Configurator = () => {
   return (
     <div className="configurator">
       <div className="configurator__section">
-        <div className="configurator__section__title">Chair material</div>
+        <div className="configurator__section__title">Sofa material</div>
         <div className="configurator__section__values">
           <div
             className={`item ${material === "leather" ? "item--active" : ""}`}
@@ -28,9 +28,9 @@ const Configurator = () => {
         </div>
       </div>
       <div className="configurator__section">
-        <div className="configurator__section__title">Chair color</div>
+        <div className="configurator__section__title">Sofa color</div>
         <div className="configurator__section__values">
-          {chairColors.map((item, index) => (
+          {sofaColors.map((item, index) => (
             <div
               key={index}
               className={`item ${

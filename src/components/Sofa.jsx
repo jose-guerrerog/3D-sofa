@@ -8,7 +8,7 @@ import * as THREE from "three";
 import { useSofaStore } from "../store/sofaStore";
 
 function Sofa(props) {
-  const { nodes, materials } = useGLTF("./models/sofa2.glb");
+  const { nodes, materials } = useGLTF("./models/sofa.glb");
   const material = useSofaStore(state => state.material)
   const color = useSofaStore(state => state.color)
 
